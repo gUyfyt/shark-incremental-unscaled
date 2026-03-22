@@ -120,7 +120,7 @@ const FORGE = {
         max: 4,
         unl: ()=>hasForgeUpgrade('anvil',2),
 
-        time: [300, 1800, 1e7, 1],
+        time: [300, 1800, 12000, 1],
         cost: [
             [
                 ['prestige','ee63',true],
