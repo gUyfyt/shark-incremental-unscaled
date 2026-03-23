@@ -68,9 +68,9 @@ const EVOLUTION_TREE = {
         ()=>Decimal.mul(2,simpleCETEffect(38)).mul(getNucleobaseEffect('guanine',4)),
         ()=>Decimal.mul(2,simpleCETEffect(39)).mul(getNucleobaseEffect('guanine',4)),
 
-        ()=>CURRENCIES.fish.total.max(0).add(10).log10().log10().div(6).add(1),
-        ()=>CURRENCIES.prestige.total.max(0).add(10).log10().log10().div(6).add(1),
-        ()=>CURRENCIES.core.total.max(0).add(10).log10().root(2).div(6).add(1),
+        ()=>CURRENCIES.fish.total.max(0).add(10).log10().log10().add(1),
+        ()=>CURRENCIES.prestige.total.max(0).add(10).log10().log10().add(1),
+        ()=>CURRENCIES.core.total.max(0).add(10).log10().root(2).add(1),
         ()=>20,
 
         null,
