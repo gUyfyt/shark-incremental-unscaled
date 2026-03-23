@@ -3,14 +3,14 @@ const EINF = Decimal.dInf
 
 const ST_NAMES = [
 	null, [
-		["","U","D","T","Qa","Qt","Sx","Sp","Oc","No"],
-		["","Dc","Vg","Tg","Qag","Qtg","Sxg","Spg","Ocg","Nog"],
-		["","Ce","De","Te","Qae","Qte","Sxe","Spe","Oce","Noe"],
+		["","U","D","T","Qa","Qi","Sx","Sp","Oc","No"],
+		["","Dc","Vg","Tg","Qag","Qig","Sxg","Spg","Ocg","Nog"],
+		["","Ce","Du","Te","Qu","Qn","Se","Si","Ot","Ni"],
 	],[
-		["","Mi","Mc","Na","Pc","Fm","At","Zp","Yc","Xn"],
-		["","Me","Du","Tr","Te","Pe","He","Hp","Ot","En"],
-		["","c","Ic","TCn","TeC","PCn","HCn","HpC","OCn","ECn"],
-		["","Hc","DHe","THt","TeH","PHc","HHe","HpH","OHt","EHc"]
+		["","Mi","Mc","Na","Pc","Fm","At","Zp","Yc","Rn"],
+		["","Me","De","Tr","Tt","Pn","He","Hp","Oe","En"],
+		["","c","I","TCn","TeC","PCn","HCt","HpC","OCn","EnC"],
+		["","Hc","DoH","THe","TeH","PHc","HHt","HpH","OHe","EHt"]
 	]
 ]
 
@@ -264,7 +264,7 @@ const FORMATS = {
   
         let r = ''
         if (x < 10) return ST_NAMES[2][0][x]
-        if (t == 1 && o == 0) r += "Vec"
+        if (t == 1 && o == 0) r += "Qc"
         else r += ST_NAMES[2][1][o] + ST_NAMES[2][2][t]
         r += ST_NAMES[2][3][h]
   
@@ -348,7 +348,7 @@ function format(ex, acc=2, max=options.max_range, type=options.notation) {
               if (ee.gte(3000)) return "e"+format(e, acc, max, "st")
 
               let final = ""
-              if (e3.lt(4)) final = ["", "K", "M", "B"][Math.round(e3.toNumber())]
+              if (e3.lt(4)) final = ["", "k", "M", "B"][Math.round(e3.toNumber())]
               else {
                 let ee3 = Math.floor(e3.log(1e3).toNumber())
                 if (ee3 < 100) ee3 = Math.max(ee3 - 1, 0)
