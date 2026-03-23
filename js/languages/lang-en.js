@@ -746,7 +746,7 @@ LANGUAGES.EN = {
             'berkelium': "Berkelium-247",
             'californium': "Californium-252",
             'oganesson': "Oganesson-294",
-            'sharkium': "Sharkium",
+            'sharkium': "Sharkium-327",
         },
 
         'mined-resources-text': `Mined Resources`,
@@ -810,14 +810,14 @@ LANGUAGES.EN = {
         // Singularity
 
         'black-hole-texts': [
-            `Have enough matter to form a black hole.... But what are you doing while stuck inside a black hole? No worries, there is a white hole that sends you into another universe, but it's a bit complex.`,
-            `How have you been in a parallel universe? So, you're going to get stuck in another black hole!`,
-            `Wait a minute... How did you get ${toTextStyle("Fish",'fish')} faster, no matter what? I'm going to put you in serious trouble!`,
-            `Seriously...`,
-            `...`,
-            `Please stop it here!`,
-            `THIS IS YOUR LAST CHANCE!`,
-            `Ugh... Fine... You win! Here's without reductions...`,
+            `Ok, you literally resetted all your progress in exchange for a ${toTextStyle("Black Hole",'black-hole')}. Now, I don't like the inflation, so I will nerf your progress. Now go to a parallel universe!`,
+            `You just filled all of the particle accelerators WHILE in a parallel universe! You will be sent to the parallel black hole!`,
+            `How the heck did you get ${toTextStyle("Fish",'fish')} even faster? That does it! I will insanely nerf your things!`
+            `Seriously?`,
+            `Bro... stop it!`,
+            `JUST STOP! NOW!!!`,
+            `<strong>THIS IS YOUR LAST CHANCE BEFORE ULTIMATE DESTRUCTION!!!!!!!!!!!</strong>`,
+            `YOU WIN... and I failed. Here's no reductions.`,
         ],
         get 'singularity-milestones'() {
             return [
