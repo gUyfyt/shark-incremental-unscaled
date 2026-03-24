@@ -810,7 +810,7 @@ LANGUAGES.EN = {
         // Singularity
 
         'black-hole-texts': [
-            `Ok, you literally resetted all your progress in exchange for a ${toTextStyle("Black Hole",'black-hole')}. Now, I don't like the inflation, so I will nerf your progress. Now go to a parallel universe!`,
+            `Ok, you literally resetted all your progress in exchange for a Black Hole. Now, I don't like the inflation, so I will nerf your progress. Now go to a parallel universe!`,
             `You just filled all of the particle accelerators WHILE in a parallel universe! You will be sent to the parallel black hole!`,
             `How the heck did you get ${toTextStyle("Fish",'fish')} even faster? That does it! I will insanely nerf your things!`
             `Seriously?`,
