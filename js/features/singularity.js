@@ -10,7 +10,7 @@ const S_MILESTONES = [
         req:()=>player.singularity.best_bh.gte(3),
     },{
         unl:()=>true,
-        req:()=>player.singularity.best_bh.gte(4),
+        req:()=>player.singularity.best_bh.gte(-3),
     },{
         unl:()=>true,
         req:()=>player.singularity.best_bh.gte(5),
@@ -76,7 +76,7 @@ const REMNANT_UPGS = [
         cost:a=>a.add(1).pow(1.25).pow_base(5).mul(2e7),
         bulk:a=>a.div(2e7).log(5).root(1.25).sub(1),
         effect(a) {
-            let x = a.pow_base(2)
+            let x = a.times(10).pow_base(2)
             return x
         },
         effDesc: x=>formatMult(x),
